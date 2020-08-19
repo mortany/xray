@@ -26,6 +26,10 @@
 #include "script_zone.h"
 #include "relation_registry.h"
 #include "danger_object.h"
+#include "detail_path_manager_space.h"
+#include "patrol_path_manager_space.h"
+
+#include "game_object_space.h"
 
 using namespace luabind;
 
@@ -118,9 +122,10 @@ class_<CScriptGameObject> &script_register_game_object1(class_<CScriptGameObject
 		.def("object",						(CScriptGameObject *(CScriptGameObject::*)(int))(&CScriptGameObject::GetObjectByIndex))
 		.def("active_item",					&CScriptGameObject::GetActiveItem)
 		
-		.def("set_callback",				(void (CScriptGameObject::*)(GameObject::ECallbackType, const luabind::functor<void> &))(&CScriptGameObject::SetCallback))
-		.def("set_callback",				(void (CScriptGameObject::*)(GameObject::ECallbackType, const luabind::functor<void> &, const luabind::object &))(&CScriptGameObject::SetCallback))
-		.def("set_callback",				(void (CScriptGameObject::*)(GameObject::ECallbackType))(&CScriptGameObject::SetCallback))
+		.def("set_callback", (void (CScriptGameObject::*)(GameObject::ECallbackType, const luabind::functor<void>&))(&CScriptGameObject::SetCallback))
+		.def("set_callback", (void (CScriptGameObject::*)(GameObject::ECallbackType, const luabind::functor<void>&, const luabind::object&))(&CScriptGameObject::SetCallback))
+		.def("set_callback", (void (CScriptGameObject::*)(GameObject::ECallbackType))(&CScriptGameObject::SetCallback))
+
 
 		.def("set_patrol_extrapolate_callback",	(void (CScriptGameObject::*)())(&CScriptGameObject::set_patrol_extrapolate_callback))
 		.def("set_patrol_extrapolate_callback",	(void (CScriptGameObject::*)(const luabind::functor<bool> &))(&CScriptGameObject::set_patrol_extrapolate_callback))

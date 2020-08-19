@@ -70,11 +70,7 @@ xr_token*				vid_mode_token = NULL;
 
 void CHW::CreateD3D	()
 {
-#ifndef DEDICATED_SERVER
 	LPCSTR		_name			= "d3d9.dll";
-#else
-	LPCSTR		_name			= "xrd3d9-null.dll";
-#endif
 
 	hD3D9            			= LoadLibrary(_name);
 	R_ASSERT2	           	 	(hD3D9,"Can't find 'd3d9.dll'\nPlease install latest version of DirectX before running this program");

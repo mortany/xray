@@ -91,7 +91,7 @@ IC	void CSoundMemoryManager::update_sound_threshold			()
 	m_sound_threshold		= _max(
 		m_self_sound_factor*
 		m_sound_threshold*
-		exp(
+		(float)exp(
 			float(Device.dwTimeGlobal - m_last_sound_time)/
 			float(m_sound_decrease_quant)*
 			log(m_decrease_factor)

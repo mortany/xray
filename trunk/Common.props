@@ -42,10 +42,12 @@
   
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <LinkIncremental>true</LinkIncremental>
+	<PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup> 
 
   <PropertyGroup Condition="'$(Configuration)'=='Mixed' Or '$(Configuration)'=='Release'">
     <LinkIncremental>false</LinkIncremental>
+	<PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   
   <ItemDefinitionGroup>

@@ -7,7 +7,7 @@
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
-#include "afxres.h"
+#include "winres.h"
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
@@ -85,7 +85,7 @@ BEGIN
             VALUE "FileDescription", "BugTrap dynamic link library"
             VALUE "FileVersion", "1.2.2654.37769"
             VALUE "InternalName", "BugTrap"
-            VALUE "LegalCopyright", "Copyright © 2005-2007 IntelleSoft"
+            VALUE "LegalCopyright", "Copyright Â© 2005-2007 IntelleSoft"
             VALUE "OriginalFilename", "BugTrap.dll"
             VALUE "ProductName", "BugTrap"
             VALUE "ProductVersion", "1.2.2654.37769"
@@ -137,7 +137,7 @@ FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
     ICON            IDI_BUG,IDC_STATIC,7,7,20,20,WS_GROUP
     LTEXT           "BugTrap software error reporting tool\nVersion 1.2",IDC_VERSION_STRING,34,7,128,16
-    LTEXT           "Copyright © 2005-2007 IntelleSoft",IDC_STATIC,7,32,113,8
+    LTEXT           "Copyright Â© 2005-2007 IntelleSoft",IDC_STATIC,7,32,113,8
     LTEXT           "makspyat@gmail.com",IDC_EMAIL,7,42,72,10,WS_TABSTOP
     LTEXT           " GUI design based on Jim Crafton's BlackBox library",IDC_PORTIONS_COPYRIGHT,7,59,228,10,SS_NOPREFIX | SS_SUNKEN
     DEFPUSHBUTTON   "Close",IDCANCEL,195,7,40,14,WS_GROUP
