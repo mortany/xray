@@ -1,9 +1,0 @@
-; MAXComponents.def : Declares the module parameters.
-
-LIBRARY      "MAXComponents.DLL"
-
-EXPORTS
-	DllCanUnloadNow      PRIVATE
-	DllGetClassObject    PRIVATE
-	DllRegisterServer    PRIVATE
-	DllUnregisterServer	 PRIVATE
